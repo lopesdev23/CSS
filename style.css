@@ -1,0 +1,160 @@
+*{
+     box-sizing: border-box;
+}
+body{
+font-family:'Roboto', sans-serif;
+font-size: 18px;
+}
+.container{
+    background-color:#333;
+    color:#eee;
+    width: 80%;
+    box-sizing: border-box; /*sempre usar para o controle da largura*/
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin a mesma coisa que acima*/
+    margin: auto;
+
+
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    /* mesma coisa que usar todos acima*/
+    padding: 60px;
+    
+    /*as propriedades do border sao iguais a do padding*/
+    /*border: 3px solid red;*/
+    /*border: 5px dotted royalblue;*/
+    /*border: 15px solid rgb(0,0,255)*/
+    border-bottom:15px solid yellow;
+    border-left:10px solid tomato;
+    border-right:10px solid turquoise;
+    border-top: 15px double blue;
+    border-radius: 25px;
+
+}     
+
+.container, h1{
+   text-align: center;
+   cursor: pointer;
+}
+.container, p{
+    text-align: justify;
+}
+.main-aside ul{
+    /*list-style: square;*/
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    
+}
+.main-aside h2{
+   text-align: center;
+    
+}
+.main-aside h2:hover{
+    color: mediumseagreen;
+    cursor: pointer;
+}
+.main-aside ul a{
+    text-decoration: none;
+    color: black;
+}
+.main-aside ul a:hover{
+    color: blue;
+}
+.main-aside ul a:visited{
+color: red;
+
+}
+/*renderizar formulario*/
+.main-form{
+    padding-left: 20px;
+}
+.main-form .form-group{
+    padding-bottom: 10px;
+}
+.main-form .form-group label{
+    display: block;
+}
+.main-form .form-group input{
+    padding: 10px;
+    width:100% ;
+}
+/*Classes de utilidades*/
+.button{
+    padding:10px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+    width: auto;
+    margin: 20px;
+
+}
+.button:hover{
+    color: red;
+    cursor: pointer;
+}
+.box{
+    width: 80%;;
+    margin: auto;
+}
+/*position*/
+.relative{
+position: relative;
+border: 3px solid #333;
+height: 500px;
+border-radius: 15px;
+}
+.relative .absolute{
+position: absolute;
+bottom: 0;
+}
+.relative .absolute h3{
+margin: 0;
+}
+/*Barra de navegacao*/
+#main-navbar{
+    background: #333;
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+/*fixed button*/ 
+.fixed-button{
+    background: #333;
+    color: #eee;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+/*Categorias*/
+.categories ul{
+list-style: none;
+
+}
+.categories ul li:first-child{
+    color: blue;
+}
+
+.categories ul li:last-child{
+    color: rgb(255, 68, 0);
+}
+.categories ul li:nth-child(3){
+    color: rgb(0, 255, 145);
+}
+.categories ul li:nth-child(even){
+    color: rgb(255, 132, 0);
+}
+.categories ul li:nth-child(odd){
+    color: rgb(181, 15, 176);
+}
